@@ -1,3 +1,8 @@
+@use "../styles/partials/_global.scss" as *;
+@use "../styles/partials/mixins" as *;
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/fonts.scss" as *;
+
 .homepage__copilot {
   display: flex;
   justify-content: center;
