@@ -1,0 +1,33 @@
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/global.scss" as *;
+
+.result {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  &__container {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    margin: 0.5rem;
+  }
+
+  &__text {
+    word-break: break-word;
+  }
+}
+
+pre {
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+  white-space: pre-wrap;
+  background-color: white;
+  font-family: "Figtree";
+  line-height: 1.5rem;
+  font-size: 0.75rem;
+}
