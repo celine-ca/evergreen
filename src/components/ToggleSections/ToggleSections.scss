@@ -1,0 +1,43 @@
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+
+    .button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 8px;
+        border: none;
+        color: white;
+
+        &.work {
+            background: #007bff;
+
+            &:hover {
+                background: #0056b3;
+            }
+        }
+
+        &.personal {
+            background: #28a745;
+
+            &:hover {
+                background: #1e7e34;
+            }
+        }
+
+        &.organization {
+            background: #6f42c1;
+
+            &:hover {
+                background: #563d7c;
+            }
+        }
+    }
+}
