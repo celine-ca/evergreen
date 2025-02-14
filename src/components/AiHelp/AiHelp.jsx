@@ -19,8 +19,6 @@ const AiHelp = () => {
     );
   };
 
-  console.log(API_URL);
-
   useEffect(() => {
     if (!formSubmit) return;
     const fetchData = async () => {

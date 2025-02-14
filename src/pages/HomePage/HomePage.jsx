@@ -33,9 +33,9 @@ function HomePage() {
       <Header />
       <main className="homepage">
         {/* Purpose Section */}
-        <section className="homepage__purpose">
-          <h2 className="homepage__purpose-title">Purpose</h2>
-          <p className="homepage__purpose-text">
+        <section className="homepage-purpose">
+          <h2 className="homepage-purpose__title">Purpose</h2>
+          <p className="homepage-purpose__text">
             Empower businesses and individuals to confidently adopt AI through
             interactive learning, and peer engagement.
           </p>
