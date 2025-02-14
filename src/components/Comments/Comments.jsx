@@ -34,7 +34,7 @@ export default function Comments() {
 
     return (
         <section className="comments">
-            <h2 className="comments__title">Comments</h2>
+            <h2 className="comments__title">What DLA Piper workers are saying.</h2>
             <div className="comments__container">
                 <ul className="comments__list">
                     {comments.map((comment, index) => (

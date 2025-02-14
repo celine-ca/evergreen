@@ -1,4 +1,4 @@
-import "./Part4-5.css";
+import "./Part5.scss";
 
 
 function Part5() {
@@ -18,10 +18,14 @@ return <section>
       </div>
 
       <h2 className="section-title">Join a community of AI learners!</h2>
-      <p className="description">
-        Get help, share experiences, and learn AI together.
-      </p>
-      <button className="forum-button">🧑‍💻 Join AI Learners Forum</button>
+
+        <div className="description-wrapper">
+            <p className="description">
+                Get help, share experiences, and learn AI together.
+            </p>
+            <button className="forum-button">🧑‍💻 Join AI Learners Forum</button>
+        </div>
+
     </section>;
 };
 

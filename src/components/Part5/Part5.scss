@@ -1,19 +1,30 @@
+.description-wrapper{
+  text-align: center;
+  justify-content: center;
+}
+
 .container {
+    display: flex;
     text-align: center;
     padding: 2rem;
     font-family: Arial, sans-serif;
+    align-items: center;
   }
   
   .heading {
     font-size: 2rem;
     font-weight: bold;
     color: #1a1a1a;
+    display: flex;
+    align-items: center;
   }
   
   .subheading {
     font-size: 1.2rem;
     color: #555;
     margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
   }
   
   .try-button {
@@ -35,6 +46,9 @@
     font-size: 1.5rem;
     margin-top: 2rem;
     color: #333;
+    //display: flex;
+    //align-items: center;
+    text-align: center;
   }
   
   .features {
@@ -42,6 +56,7 @@
     justify-content: center;
     gap: 1rem;
     margin: 1rem 0;
+    align-items: center;
   }
   
   .feature-button {
