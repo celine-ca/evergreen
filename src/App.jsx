@@ -1,11 +1,19 @@
 import "./App.scss";
-import HomePage from "./pages/HomePage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import HomePage from "./pages/HomePage/HomePage";
+import Ai from "./pages/Ai/Ai";
 
 function App() {
   return (
-    <>
-      <HomePage />
-    </>
+    <Router>
+      {" "}
+      <Routes>
+        {" "}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/ai" element={<Ai />} />
+      </Routes>
+    </Router>
   );
 }
 

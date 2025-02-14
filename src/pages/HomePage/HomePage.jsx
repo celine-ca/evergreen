@@ -1,10 +1,10 @@
-import Header from "../components/Header/Header";
-import HeroImage from "../assets/images/hero.png";
-import Articleone from "../assets/images/Article-1.png";
-import Articletwo from "../assets/images/Article-2.png";
-import Articlethree from "../assets/images/Article-3.png";
-import "../pages/HomePage.scss";
-
+import { Link } from "react-router-dom";
+import Header from "../../components/Header/Header";
+import HeroImage from "../../assets/images/Hero.png";
+import Articleone from "../../assets/images/Article-1.png";
+import Articletwo from "../../assets/images/Article-2.png";
+import Articlethree from "../../assets/images/Article-3.png";
+import "./HomePage.scss";
 function HomePage() {
   const articles = [
     {
@@ -43,7 +43,7 @@ function HomePage() {
 
         {/* Copilot Section with Image */}
         <section className="homepage__copilot">
-          <div className="homepage__copilot-card">
+          <Link to="/ai" className="homepage__copilot-card">
             <div className="homepage__copilot-image">
               <img
                 className="homepage__copilot-image--rounded"
@@ -52,12 +52,9 @@ function HomePage() {
               />
             </div>
             <div className="homepage__copilot-content">
-              <h3 className="homepage__copilot-title">
-                DLA Piper’s journey with Microsoft 365 Copilot is a blueprint
-                for legal innovation
-              </h3>
+              <h3 className="homepage__copilot-title">Let's Start!</h3>
             </div>
-          </div>
+          </Link>
         </section>
         {/* Articles Section */}
         <section className="homepage__articles">
