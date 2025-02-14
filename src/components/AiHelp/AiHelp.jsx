@@ -11,6 +11,7 @@ const AiHelp = () => {
   const [email, setEmail] = useState("");
   const [analysis, setAnalysis] = useState("");
   const [formSubmit, setFormSubmit] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleFeatureClick = (feature) => {
     setSelectedFeature((prevFeature) =>
@@ -23,6 +24,7 @@ const AiHelp = () => {
   useEffect(() => {
     if (!formSubmit) return;
     const fetchData = async () => {
+      setLoading(true);
       const prompt = `Please write a business email and include the provided details below like the recipient, purpose, and key points. In the response, only provide the business email draft.
               Here are the details: ${email}`;
 
@@ -48,6 +50,8 @@ const AiHelp = () => {
         setAnalysis(geminiResults);
       } catch (error) {
         console.log(error);
+      } finally {
+        setLoading(false); // ⬅️ Hide loading once response is received
       }
     };
     fetchData();
@@ -99,7 +103,7 @@ const AiHelp = () => {
       {selectedFeature === "email" && (
         <>
           <EmailForm onAnalyze={handleAnalyze} />
-          <EmailOutput analysis={analysis} />
+          <EmailOutput analysis={analysis} loading={loading} />
         </>
       )}
       {/* {selectedFeature === "slides" && (
